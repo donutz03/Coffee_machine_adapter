@@ -1,9 +1,9 @@
-package com.cts.ase.clase;
+package com.cts.ase.clase.CoffeeModel;
 
 public class Coffee {
-    private CoffeeSelection selection;
+    private CoffeeType selection;
 
-    public Coffee(CoffeeSelection selection) {
+    public Coffee(CoffeeType selection) {
         this.selection = selection;
     }
 

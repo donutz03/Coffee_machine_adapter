@@ -1,4 +1,4 @@
-package com.cts.ase.clase;
+package com.cts.ase.clase.CoffeeMachines;
 
 public class Configuration {
     private int quantityCoffee;

@@ -1,4 +1,7 @@
-package com.cts.ase.clase;
+package com.cts.ase.program;
+
+import com.cts.ase.clase.CoffeeMachines.Interface.FilterCoffeeMachine;
+import com.cts.ase.clase.CoffeeModel.Coffee;
 
 public class FilterCoffeeApp {
     private FilterCoffeeMachine coffeeMachine;

@@ -1,4 +1,4 @@
-package com.cts.ase.clase;
+package com.cts.ase.clase.CoffeeModel;
 
 public class CoffeeBean {
     private String name;
