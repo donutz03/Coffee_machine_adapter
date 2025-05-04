@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Example 1: Using Premium Coffee Machine with Adapter");
+
         Map<CoffeeType, CoffeeBean> premiumBeans = new HashMap<>();
         premiumBeans.put(CoffeeType.FILTER_COFFEE, new CoffeeBean("Premium beans", 1000));
         premiumBeans.put(CoffeeType.ESPRESSO, new CoffeeBean("Espresso beans", 500));
@@ -23,7 +23,6 @@ public class Main {
         FilterCoffeeApp app = new FilterCoffeeApp(adapter);
         app.prepareCoffee();
 
-        System.out.println("\nExample 2: Using Basic Coffee Machine directly");
         Map<CoffeeType, GroundCoffee> basicBeans = new HashMap<>();
         basicBeans.put(CoffeeType.FILTER_COFFEE, new GroundCoffee("Basic beans", 1000));
         
@@ -31,7 +30,6 @@ public class Main {
         FilterCoffeeApp basicApp = new FilterCoffeeApp(basicMachine);
         basicApp.prepareCoffee();
 
-        System.out.println("\nExample 3: Trying to add different types of coffee beans");
         try {
             premiumMachine.addCoffeeBeans(CoffeeType.FILTER_COFFEE, new CoffeeBean("Different beans", 500));
         } catch (CoffeeException e) {
